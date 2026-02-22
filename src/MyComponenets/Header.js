@@ -1,10 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default function Header() {
+export default function Header(props) {
   return (
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#">{props.title}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -31,13 +32,19 @@ export default function Header() {
           <a className="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form className="d-flex" role="search">
+      {props.searchbar? <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </form>:""}
     </div>
   </div>
 </nav>
 
   )
 }
+
+Header.propTypes = {
+    title: PropTypes.string
+}
+
+

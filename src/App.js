@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './MyComponenets/Header';
 import Footer from './MyComponenets/Footer'; 
@@ -10,7 +9,7 @@ function App() {
   let x = 2;
   return (
     <>
-    <Header/>
+    <Header title = {1} searchbar = {true}/>
     <Todos/>
     <Footer/>
     </>
