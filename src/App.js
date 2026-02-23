@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './MyComponenets/Header';
 import Footer from './MyComponenets/Footer'; 
 import Todos from './MyComponenets/Todos'; 
+import AddTodo from './MyComponenets/AddTodo';
 import React, {useActionState, useState} from 'react';
 
 import './App.css';
@@ -40,6 +41,7 @@ function App() {
   return (
     <>
     <Header/>
+    <AddTodo/>
     <Todos todos = {todos} onDelete={onDelete}/>
     <Footer/>
     </>
