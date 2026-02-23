@@ -9,7 +9,7 @@ function App() {
   let x = 2;
   return (
     <>
-    <Header title = "MyTodoList" searchbar = {false}/>
+    <Header/>
     <Todos/>
     <Footer/>
     </>

@@ -43,6 +43,12 @@ export default function Header(props) {
   )
 }
 
+Header.defaultProps = {
+  title: "Your Title Here",
+  searchbar: false
+}
+
+
 Header.propTypes = {
     title: PropTypes.string
 }
