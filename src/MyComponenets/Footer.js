@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   let footerStyle = {
-    position:"absolute",
-    top:"100vh",
+    position:"relativeS",
+    top:"70vh",
     width:"100%"
 
   }
