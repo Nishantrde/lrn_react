@@ -15,6 +15,10 @@ function App() {
     }));
   }
 
+  const addTodo = (title, desc)=>{
+    console.log("your title and desc", title, desc)
+  }
+
   let x = 2;
   const [todos, setTodos] = useState([
     {
@@ -41,7 +45,7 @@ function App() {
   return (
     <>
     <Header/>
-    <AddTodo/>
+    <AddTodo addTodo={addTodo}/>
     <Todos todos = {todos} onDelete={onDelete}/>
     <Footer/>
     </>
