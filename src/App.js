@@ -17,7 +17,7 @@ function App() {
 
   const addTodo = (title, desc)=>{
     console.log("your title and desc", title, desc)
-    let sno = todos.length-1
+    let sno = todos[todos.length-1].sno + 1
     const myTodo = {
       sno: sno,
       title: title,
